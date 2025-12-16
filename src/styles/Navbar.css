@@ -1,0 +1,89 @@
+.logo a {
+  font-size: 20px;
+  font-weight: 800;
+  float: left;
+  font-family: courier;
+  color: #364f6b;
+}
+
+
+nav {
+  width: 100%;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
+  border-bottom: 1px solid #364f6b;
+ 
+}
+
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  line-height: 80px;
+  max-width: 1200px; /* sesuaikan dengan lebar maksimal yang kamu mau */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #364f6b; /* boleh diganti biar ada efek hover */
+}
+
+
+@media screen and (max-width: 991.98px) {
+  .logo a {
+    display: block;
+    margin-right: auto;
+    text-align: center;
+  }
+
+ .menu ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+  nav .menu ul {
+    text-align: center;
+    margin: right;
+    line-height: 60px;
+  }
+
+  nav .menu ul li {
+    display: inline-block;
+    float: none;
+  }
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+a {
+  color: black; 
+}
