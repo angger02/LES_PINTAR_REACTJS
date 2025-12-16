@@ -36,7 +36,7 @@ export const user = [
     username: "murid1",
     password: "murid123",
     role: "murid",
-    nama: "Andi Wijaya",
+    nama: "Sodikin",
     email: "andi@gmail.com",
     kelas: "10 IPA 1",
     orangTua: "Bapak Wijaya"
@@ -46,7 +46,7 @@ export const user = [
     username: "orangtua1",
     password: "orangtua123",
     role: "orangtua",
-    nama: "Ibu Dewi",
+    nama: "Ibu Daryani",
     email: "dewi@gmail.com",
     anakNama: "Andi Wijaya",
     anakKelas: "10 IPA 1"

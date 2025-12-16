@@ -24,6 +24,8 @@ function Home() {
             </div>
         </section>
 
+    {parse(homeSection.visiMisi)}
+
 
     {/* online course */}
         <section id="courses">
@@ -39,7 +41,7 @@ function Home() {
             <div className="footer">
                 <div className="footer-section">
                     <h3>Les Pintar</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+                    <p>Les Pintar adalah layanan bimbingan belajar modern yang dirancang untuk membantu siswa belajar dengan nyaman, fleksibel, dan menyenangkan</p>
                 </div>
                 <div className="footer-section">
                     <h3>About</h3>
@@ -52,11 +54,12 @@ function Home() {
                 </div>
                 <div className="footer-section">
                     <h3>Social</h3>
-                    <p><b>YouTube: </b>Programming di RumahRafif</p>
+                    <p><b>Instagram: </b>@anggerhdyt</p>
                 </div>
             </div>
         </div>
     </div>
+    
     
     <Contact/>
     <Footer />

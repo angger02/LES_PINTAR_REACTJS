@@ -2,6 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home.jsx";
 import Login from "./pages/Login.jsx";
+import GuruDashboard from "./pages/dashboard/GuruDashboard.jsx";
+import MuridDashboard from "./pages/dashboard/MuridDashboard.jsx";
+import AdminDashboard from "./pages/dashboard/AdminDashboard.jsx";
 
 function App() {
   return (
@@ -9,6 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/dashboard/guru" element={<GuruDashboard />} />
+        <Route path="/dashboard/murid" element={<MuridDashboard />} />
+        <Route path="/dashboard/admin" element={<AdminDashboard />} />
       </Routes>
     </BrowserRouter>
   );
