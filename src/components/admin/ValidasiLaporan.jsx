@@ -53,9 +53,9 @@ const ValidasiLaporan = () => {
                   </p>
                 </div>
                 <span className={`status-badge ${lap.status}`}>
-                  {lap.status === 'pending' && '⏳ Pending'}
-                  {lap.status === 'approved' && '✅ Disetujui'}
-                  {lap.status === 'rejected' && '❌ Ditolak'}
+                  {lap.status === 'pending' && ' Pending'}
+                  {lap.status === 'approved' && ' Disetujui'}
+                  {lap.status === 'rejected' && ' Ditolak'}
                 </span>
               </div>
               <div className="laporan-content">
@@ -71,13 +71,13 @@ const ValidasiLaporan = () => {
                     className="btn-approve"
                     onClick={() => handleValidasi(lap.id, 'approved')}
                   >
-                    ✅ Setujui
+                     Setujui
                   </button>
                   <button 
                     className="btn-reject"
                     onClick={() => handleValidasi(lap.id, 'rejected')}
                   >
-                    ❌ Tolak
+                     Tolak
                   </button>
                 </div>
               )}

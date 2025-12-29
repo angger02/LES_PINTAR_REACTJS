@@ -14,7 +14,7 @@ const JadwalMengajar = ({ guruId }) => {
         {jadwalSorted.map(jadwal => (
           <div key={jadwal.id} className="jadwal-card">
             <div className="jadwal-hari">{jadwal.hari}</div>
-            <div className="jadwal-waktu">⏰ {jadwal.waktu}</div>
+            <div className="jadwal-waktu"> {jadwal.waktu}</div>
             <div className="jadwal-info">
               <p><strong>Kelas:</strong> {jadwal.kelas}</p>
               <p><strong>Mata Pelajaran:</strong> {jadwal.mataPelajaran}</p>

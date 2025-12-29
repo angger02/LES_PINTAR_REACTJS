@@ -70,7 +70,7 @@ const KelolaPengumuman = () => {
     <div className="kelola-pengumuman">
       {/* Form Pengumuman */}
       <div className="section-card">
-        <h3>{editId ? '✏️ Edit Pengumuman' : '➕ Buat Pengumuman Baru'}</h3>
+        <h3>{editId ? '✏️ Edit Pengumuman' : ' Buat Pengumuman Baru'}</h3>
         
         {success && (
           <div className="success-message">
@@ -139,7 +139,7 @@ const KelolaPengumuman = () => {
 
           <div className="form-actions">
             <button type="submit" className="submit-btn">
-              📢 {editId ? 'Update' : 'Publikasikan'} Pengumuman
+               {editId ? 'Update' : 'Publikasikan'} Pengumuman
             </button>
             {editId && (
               <button 
@@ -164,7 +164,7 @@ const KelolaPengumuman = () => {
 
       {/* Daftar Pengumuman */}
       <div className="section-card">
-        <h3>📋 Daftar Pengumuman</h3>
+        <h3> Daftar Pengumuman</h3>
         
         {pengumumanData.length > 0 ? (
           <div className="pengumuman-list">
@@ -181,7 +181,7 @@ const KelolaPengumuman = () => {
                         Target: {pengumuman.target}
                       </span>
                       <span className="date">
-                        📅 {new Date(pengumuman.tanggal).toLocaleDateString('id-ID')}
+                         {new Date(pengumuman.tanggal).toLocaleDateString('id-ID')}
                       </span>
                     </div>
                   </div>
@@ -194,13 +194,13 @@ const KelolaPengumuman = () => {
                     className="btn-edit"
                     onClick={() => handleEdit(pengumuman)}
                   >
-                    ✏️ Edit
+                     Edit
                   </button>
                   <button 
                     className="btn-delete"
                     onClick={() => handleDelete(pengumuman.id)}
                   >
-                    🗑️ Hapus
+                     Hapus
                   </button>
                 </div>
               </div>

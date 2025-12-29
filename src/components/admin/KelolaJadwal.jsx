@@ -33,12 +33,12 @@ const KelolaJadwal = () => {
 
       {/* Jadwal Kelas */}
       <div className="section-card">
-        <h3>📅 Jadwal Kelas {selectedKelas || 'Semua'}</h3>
+        <h3> Jadwal Kelas {selectedKelas || 'Semua'}</h3>
         <div className="jadwal-grid">
           {jadwalFiltered.map(jadwal => (
             <div key={jadwal.id} className="jadwal-card">
               <div className="jadwal-hari">{jadwal.hari}</div>
-              <div className="jadwal-waktu">⏰ {jadwal.waktu}</div>
+              <div className="jadwal-waktu"> {jadwal.waktu}</div>
               <div className="jadwal-info">
                 <p><strong>Kelas:</strong> {jadwal.kelas}</p>
                 <p><strong>Mata Pelajaran:</strong> {jadwal.mataPelajaran}</p>
@@ -51,7 +51,7 @@ const KelolaJadwal = () => {
 
       {/* Daftar Murid */}
       <div className="section-card">
-        <h3>👥 Daftar Murid {selectedKelas || 'Semua Kelas'}</h3>
+        <h3> Daftar Murid {selectedKelas || 'Semua Kelas'}</h3>
         <div className="table-responsive">
           <table className="data-table">
             <thead>

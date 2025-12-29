@@ -59,11 +59,11 @@ const RiwayatAbsensi = ({ muridId }) => {
 
   const getStatusIcon = (status) => {
     switch(status) {
-      case 'hadir': return '✅';
-      case 'sakit': return '🤒';
-      case 'izin': return '📝';
-      case 'alpha': return '❌';
-      default: return '❓';
+      case 'hadir': return '';
+      case 'sakit': return '';
+      case 'izin': return '';
+      case 'alpha': return '';
+      default: return '';
     }
   };
 
@@ -71,7 +71,7 @@ const RiwayatAbsensi = ({ muridId }) => {
     <div className="riwayat-absensi">
       {/* Info Card */}
       <div className="info-card">
-        <h3>👨‍🎓 Data Kehadiran</h3>
+        <h3> Data Kehadiran</h3>
         <p><strong>Nama:</strong> {murid.nama}</p>
         <p><strong>Kelas:</strong> {murid.kelas}</p>
       </div>
@@ -79,22 +79,22 @@ const RiwayatAbsensi = ({ muridId }) => {
       {/* Statistik Kehadiran */}
       <div className="summary-cards">
         <div className="summary-card success">
-          <div className="summary-icon">✅</div>
+          <div className="summary-icon"></div>
           <h3>{totalHadir}</h3>
           <p>Hadir</p>
         </div>
         <div className="summary-card warning">
-          <div className="summary-icon">🤒</div>
+          <div className="summary-icon"></div>
           <h3>{totalSakit}</h3>
           <p>Sakit</p>
         </div>
         <div className="summary-card info">
-          <div className="summary-icon">📝</div>
+          <div className="summary-icon"></div>
           <h3>{totalIzin}</h3>
           <p>Izin</p>
         </div>
         <div className="summary-card danger">
-          <div className="summary-icon">❌</div>
+          <div className="summary-icon"></div>
           <h3>{totalAlpha}</h3>
           <p>Alpha</p>
         </div>
@@ -102,7 +102,7 @@ const RiwayatAbsensi = ({ muridId }) => {
 
       {/* Persentase Kehadiran */}
       <div className="percentage-card">
-        <h3>📈 Persentase Kehadiran</h3>
+        <h3> Persentase Kehadiran</h3>
         <div className="percentage-bar">
           <div 
             className="percentage-fill" 
@@ -132,7 +132,7 @@ const RiwayatAbsensi = ({ muridId }) => {
 
       {/* Tabel Riwayat */}
       <div className="section-card">
-        <h3>📋 Riwayat Kehadiran</h3>
+        <h3> Riwayat Kehadiran</h3>
         {absensiFiltered.length > 0 ? (
           <div className="table-responsive">
             <table className="data-table">

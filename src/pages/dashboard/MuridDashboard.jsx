@@ -6,7 +6,7 @@ import RiwayatAbsensi from '../../components/murid/RiwayatAbsensi';
 import PerformaMurid from '../../components/murid/PerformaMurid';
 import StatusPembayaranMurid from '../../components/murid/StatusPembayaranMurid';
 import PengumumanMurid from '../../components/murid/PengumumanMurid';
-import '../../styles/MuridDashboard.css';
+import '../../styles/Dashboard.css';
 
 const MuridDashboard = () => {
   const [currentUser, setCurrentUser] = useState(null);
@@ -37,7 +37,7 @@ const MuridDashboard = () => {
       {/* Sidebar */}
       <aside className="sidebar">
         <div className="sidebar-header">
-          <h2>🎓 Les Pintar</h2>
+          <h2> Les Pintar</h2>
           <p className="user-role">
             Dashboard {currentUser.role === 'orangtua' ? 'Orang Tua' : 'Murid'}
           </p>
@@ -57,36 +57,36 @@ const MuridDashboard = () => {
             className={activeMenu === 'jadwal' ? 'active' : ''}
             onClick={() => setActiveMenu('jadwal')}
           >
-            📅 Jadwal Les
+             Jadwal Les
           </button>
           <button 
             className={activeMenu === 'absensi' ? 'active' : ''}
             onClick={() => setActiveMenu('absensi')}
           >
-            ✅ Riwayat Absensi
+             Riwayat Absensi
           </button>
           <button 
             className={activeMenu === 'performa' ? 'active' : ''}
             onClick={() => setActiveMenu('performa')}
           >
-            📊 Performa & Laporan
+             Performa & Laporan
           </button>
           <button 
             className={activeMenu === 'pembayaran' ? 'active' : ''}
             onClick={() => setActiveMenu('pembayaran')}
           >
-            💳 Status Pembayaran
+             Status Pembayaran
           </button>
           <button 
             className={activeMenu === 'pengumuman' ? 'active' : ''}
             onClick={() => setActiveMenu('pengumuman')}
           >
-            📢 Pengumuman
+             Pengumuman
           </button>
         </nav>
 
         <button className="logout-btn" onClick={handleLogout}>
-          🚪 Logout
+           Logout
         </button>
       </aside>
 
@@ -94,11 +94,11 @@ const MuridDashboard = () => {
       <main className="main-content">
         <div className="content-header">
           <h1>
-            {activeMenu === 'jadwal' && '📅 Jadwal Les'}
-            {activeMenu === 'absensi' && '✅ Riwayat Kehadiran'}
-            {activeMenu === 'performa' && '📊 Performa & Laporan Bulanan'}
-            {activeMenu === 'pembayaran' && '💳 Status Pembayaran'}
-            {activeMenu === 'pengumuman' && '📢 Pengumuman'}
+            {activeMenu === 'jadwal' && ' Jadwal Les'}
+            {activeMenu === 'absensi' && ' Riwayat Kehadiran'}
+            {activeMenu === 'performa' && ' Performa & Laporan Bulanan'}
+            {activeMenu === 'pembayaran' && ' Status Pembayaran'}
+            {activeMenu === 'pengumuman' && ' Pengumuman'}
           </h1>
         </div>
 

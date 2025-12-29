@@ -71,29 +71,29 @@ ${pembayaranData
         </div>
 
         <button onClick={handleDownloadRekap} className="download-btn">
-          📥 Download Rekap
+           Download Rekap
         </button>
       </div>
 
       {/* Summary Cards */}
       <div className="summary-cards">
         <div className="summary-card success">
-          <div className="summary-icon">✅</div>
+          <div className="summary-icon"></div>
           <h3>{rekap.lunas}</h3>
           <p>Pembayaran Lunas</p>
         </div>
         <div className="summary-card warning">
-          <div className="summary-icon">⏳</div>
+          <div className="summary-icon"></div>
           <h3>{rekap.tertunda}</h3>
           <p>Pembayaran Tertunda</p>
         </div>
         <div className="summary-card danger">
-          <div className="summary-icon">❌</div>
+          <div className="summary-icon"></div>
           <h3>{rekap.belumBayar}</h3>
           <p>Belum Bayar</p>
         </div>
         <div className="summary-card primary">
-          <div className="summary-icon">💰</div>
+          <div className="summary-icon"></div>
           <h3>Rp {(rekap.totalPemasukan / 1000000).toFixed(1)}jt</h3>
           <p>Total Pemasukan</p>
         </div>
@@ -101,7 +101,7 @@ ${pembayaranData
 
       {/* Grafik Pembayaran (Simplified) */}
       <div className="section-card">
-        <h3>📊 Statistik Pembayaran</h3>
+        <h3> Statistik Pembayaran</h3>
         <div className="chart-container">
           <div className="chart-bar-group">
             <div className="chart-bar-wrapper">
@@ -137,7 +137,7 @@ ${pembayaranData
 
       {/* Detail Transaksi */}
       <div className="section-card">
-        <h3>📋 Detail Transaksi</h3>
+        <h3> Detail Transaksi</h3>
         <div className="table-responsive">
           <table className="data-table">
             <thead>
@@ -161,9 +161,9 @@ ${pembayaranData
                         pembayaran.status === 'Lunas' ? 'approved' : 
                         pembayaran.status === 'Tertunda' ? 'pending' : 'rejected'
                       }`}>
-                        {pembayaran.status === 'Lunas' && '✅'}
-                        {pembayaran.status === 'Tertunda' && '⏳'}
-                        {pembayaran.status === 'Belum Bayar' && '❌'}
+                        {pembayaran.status === 'Lunas' && ''}
+                        {pembayaran.status === 'Tertunda' && ''}
+                        {pembayaran.status === 'Belum Bayar' && ''}
                         {' '}{pembayaran.status}
                       </span>
                     </td>

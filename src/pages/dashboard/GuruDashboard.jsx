@@ -5,7 +5,7 @@ import AbsensiForm from '../../components/guru/AbsensiForm';
 import LaporanKBMForm from '../../components/guru/LaporanKBMForm';
 import JadwalMengajar from '../../components/guru/JadwalMengajar';
 import LaporanBulanan from '../../components/guru/LaporanBulanan';
-import '../../styles/GuruDashboard.css';
+import '../../styles/Dashboard.css';
 
 const GuruDashboard = () => {
   const [currentUser, setCurrentUser] = useState(null);
@@ -33,7 +33,7 @@ const GuruDashboard = () => {
       {/* Sidebar */}
       <aside className="sidebar">
         <div className="sidebar-header">
-          <h2>🎓 Les Pintar</h2>
+          <h2> Les Pintar</h2>
           <p className="user-role">Dashboard Guru</p>
         </div>
 
@@ -50,25 +50,25 @@ const GuruDashboard = () => {
             className={activeMenu === 'jadwal' ? 'active' : ''}
             onClick={() => setActiveMenu('jadwal')}
           >
-            📅 Jadwal Mengajar
+             Jadwal Mengajar
           </button>
           <button 
             className={activeMenu === 'absensi' ? 'active' : ''}
             onClick={() => setActiveMenu('absensi')}
           >
-            ✅ Isi Absensi
+             Isi Absensi
           </button>
           <button 
             className={activeMenu === 'laporan' ? 'active' : ''}
             onClick={() => setActiveMenu('laporan')}
           >
-            📝 Laporan KBM
+             Laporan KBM
           </button>
           <button 
             className={activeMenu === 'bulanan' ? 'active' : ''}
             onClick={() => setActiveMenu('bulanan')}
           >
-            📊 Laporan Bulanan
+             Laporan Bulanan
           </button>
         </nav>
 
@@ -81,10 +81,10 @@ const GuruDashboard = () => {
       <main className="main-content">
         <div className="content-header">
           <h1>
-            {activeMenu === 'jadwal' && '📅 Jadwal Mengajar'}
-            {activeMenu === 'absensi' && '✅ Isi Absensi Murid'}
-            {activeMenu === 'laporan' && '📝 Input Laporan KBM'}
-            {activeMenu === 'bulanan' && '📊 Laporan Bulanan'}
+            {activeMenu === 'jadwal' && ' Jadwal Mengajar'}
+            {activeMenu === 'absensi' && ' Isi Absensi Murid'}
+            {activeMenu === 'laporan' && ' Input Laporan KBM'}
+            {activeMenu === 'bulanan' && ' Laporan Bulanan'}
           </h1>
         </div>
 

@@ -72,19 +72,19 @@ const KelolaDataTambahan = () => {
           className={activeTab === 'nilai' ? 'active' : ''}
           onClick={() => setActiveTab('nilai')}
         >
-          📊 Nilai
+           Nilai
         </button>
         <button 
           className={activeTab === 'catatan' ? 'active' : ''}
           onClick={() => setActiveTab('catatan')}
         >
-          📝 Catatan
+           Catatan
         </button>
         <button 
           className={activeTab === 'dokumen' ? 'active' : ''}
           onClick={() => setActiveTab('dokumen')}
         >
-          📁 Dokumen
+           Dokumen
         </button>
       </div>
 
@@ -92,7 +92,7 @@ const KelolaDataTambahan = () => {
       {activeTab === 'nilai' && (
         <>
           <div className="section-card">
-            <h3>{editId ? '✏️ Edit Nilai' : '➕ Tambah Nilai Baru'}</h3>
+            <h3>{editId ? '✏️ Edit Nilai' : ' Tambah Nilai Baru'}</h3>
             
             {success && (
               <div className="success-message">
@@ -164,7 +164,7 @@ const KelolaDataTambahan = () => {
 
               <div className="form-actions">
                 <button type="submit" className="submit-btn">
-                  💾 {editId ? 'Update' : 'Simpan'} Nilai
+                   {editId ? 'Update' : 'Simpan'} Nilai
                 </button>
                 {editId && (
                   <button 
@@ -189,7 +189,7 @@ const KelolaDataTambahan = () => {
 
           {/* Daftar Nilai */}
           <div className="section-card">
-            <h3>📋 Daftar Nilai</h3>
+            <h3> Daftar Nilai</h3>
             <div className="table-responsive">
               <table className="data-table">
                 <thead>
@@ -215,7 +215,7 @@ const KelolaDataTambahan = () => {
                           className="btn-edit"
                           onClick={() => handleEdit(nilai)}
                         >
-                          ✏️ Edit
+                           Edit
                         </button>
                       </td>
                     </tr>

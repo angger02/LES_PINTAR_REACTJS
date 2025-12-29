@@ -28,12 +28,12 @@ const PengumumanMurid = () => {
 
   const getKategoriIcon = (kategori) => {
     const icons = {
-      'Libur': '🏖️',
-      'Keuangan': '💰',
-      'Akademik': '📚',
-      'Umum': '📢'
+      'Libur': '',
+      'Keuangan': '',
+      'Akademik': '',
+      'Umum': ''
     };
-    return icons[kategori] || '📢';
+    return icons[kategori] || '';
   };
 
   return (
@@ -47,10 +47,10 @@ const PengumumanMurid = () => {
             onChange={(e) => setFilterKategori(e.target.value)}
           >
             <option value="all">Semua Kategori</option>
-            <option value="Libur">🏖️ Libur</option>
-            <option value="Keuangan">💰 Keuangan</option>
-            <option value="Akademik">📚 Akademik</option>
-            <option value="Umum">📢 Umum</option>
+            <option value="Libur"> Libur</option>
+            <option value="Keuangan"> Keuangan</option>
+            <option value="Akademik"> Akademik</option>
+            <option value="Umum"> Umum</option>
           </select>
         </div>
       </div>
@@ -68,7 +68,7 @@ const PengumumanMurid = () => {
               <div className="pengumuman-header">
                 <h3>{pengumuman.judul}</h3>
                 <p className="pengumuman-date">
-                  📅 {new Date(pengumuman.tanggal).toLocaleDateString('id-ID', {
+                   {new Date(pengumuman.tanggal).toLocaleDateString('id-ID', {
                     weekday: 'long',
                     year: 'numeric',
                     month: 'long',
@@ -81,7 +81,7 @@ const PengumumanMurid = () => {
               </div>
               <div className="pengumuman-footer">
                 <span className="target-badge">
-                  👥 Target: {pengumuman.target}
+                   Target: {pengumuman.target}
                 </span>
               </div>
             </div>

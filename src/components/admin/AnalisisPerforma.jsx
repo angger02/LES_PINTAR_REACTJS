@@ -49,7 +49,7 @@ const AnalisisPerforma = () => {
 
       {/* Ranking Murid */}
       <div className="section-card">
-        <h3>🏆 Ranking Murid (Berdasarkan Rata-rata Nilai)</h3>
+        <h3> Ranking Murid (Berdasarkan Rata-rata Nilai)</h3>
         <div className="table-responsive">
           <table className="data-table">
             <thead>
@@ -84,9 +84,9 @@ const AnalisisPerforma = () => {
                       murid.rataRata >= 80 ? 'approved' : 
                       murid.rataRata >= 70 ? 'pending' : 'rejected'
                     }`}>
-                      {murid.rataRata >= 80 && '✅ Baik'}
-                      {murid.rataRata >= 70 && murid.rataRata < 80 && '⚠️ Cukup'}
-                      {murid.rataRata < 70 && '❌ Perlu Bimbingan'}
+                      {murid.rataRata >= 80 && ' Baik'}
+                      {murid.rataRata >= 70 && murid.rataRata < 80 && ' Cukup'}
+                      {murid.rataRata < 70 && ' Perlu Bimbingan'}
                     </span>
                   </td>
                 </tr>
@@ -98,7 +98,7 @@ const AnalisisPerforma = () => {
 
       {/* Detail Murid */}
       <div className="section-card">
-        <h3>📋 Detail Performa Murid</h3>
+        <h3> Detail Performa Murid</h3>
         <div className="form-group">
           <label>Pilih Murid</label>
           <select 

@@ -68,7 +68,7 @@ const StatusPembayaran = () => {
 
       {/* Daftar Murid & Status Pembayaran */}
       <div className="section-card">
-        <h3>👥 Status Pembayaran Murid</h3>
+        <h3> Status Pembayaran Murid</h3>
         <div className="table-responsive">
           <table className="data-table">
             <thead>
@@ -96,7 +96,7 @@ const StatusPembayaran = () => {
                     <span className={`status-badge ${
                       murid.tunggakan === 0 ? 'approved' : 'rejected'
                     }`}>
-                      {murid.tunggakan === 0 ? '✅ Lancar' : '❌ Ada Tunggakan'}
+                      {murid.tunggakan === 0 ? ' Lancar' : ' Ada Tunggakan'}
                     </span>
                   </td>
                   <td>
@@ -104,7 +104,7 @@ const StatusPembayaran = () => {
                       className="btn-detail"
                       onClick={() => setSelectedMurid(murid.id.toString())}
                     >
-                      👁️ Detail
+                       Detail
                     </button>
                   </td>
                 </tr>
@@ -163,7 +163,7 @@ const StatusPembayaran = () => {
                           className="btn-approve"
                           onClick={() => handleUpdateStatus(pembayaran.id, 'Lunas')}
                         >
-                          ✅ Tandai Lunas
+                           Tandai Lunas
                         </button>
                       )}
                     </td>

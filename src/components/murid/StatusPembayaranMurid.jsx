@@ -41,10 +41,10 @@ const StatusPembayaranMurid = ({ muridId }) => {
 
   const getStatusIcon = (status) => {
     switch(status) {
-      case 'Lunas': return '✅';
-      case 'Tertunda': return '⏳';
-      case 'Belum Bayar': return '❌';
-      default: return '❓';
+      case 'Lunas': return '';
+      case 'Tertunda': return '';
+      case 'Belum Bayar': return '';
+      default: return '';
     }
   };
 
@@ -52,7 +52,7 @@ const StatusPembayaranMurid = ({ muridId }) => {
     <div className="status-pembayaran-murid">
       {/* Info Card */}
       <div className="info-card">
-        <h3>💳 Status Pembayaran SPP</h3>
+        <h3>Status Pembayaran SPP</h3>
         <p><strong>Nama:</strong> {murid.nama}</p>
         <p><strong>Kelas:</strong> {murid.kelas}</p>
         <p><strong>NIS:</strong> {murid.nis}</p>
@@ -61,22 +61,22 @@ const StatusPembayaranMurid = ({ muridId }) => {
       {/* Statistik Pembayaran */}
       <div className="summary-cards">
         <div className="summary-card success">
-          <div className="summary-icon">✅</div>
+          <div className="summary-icon"></div>
           <h3>{totalLunas}</h3>
           <p>Bulan Lunas</p>
         </div>
         <div className="summary-card warning">
-          <div className="summary-icon">⏳</div>
+          <div className="summary-icon"></div>
           <h3>{totalTertunda}</h3>
           <p>Tertunda</p>
         </div>
         <div className="summary-card danger">
-          <div className="summary-icon">❌</div>
+          <div className="summary-icon"></div>
           <h3>{totalBelum}</h3>
           <p>Belum Bayar</p>
         </div>
         <div className="summary-card primary">
-          <div className="summary-icon">💰</div>
+          <div className="summary-icon"></div>
           <h3>Rp {(totalBayar / 1000000).toFixed(1)}jt</h3>
           <p>Total Dibayar</p>
         </div>
@@ -85,7 +85,7 @@ const StatusPembayaranMurid = ({ muridId }) => {
       {/* Total Tagihan */}
       {totalTagihan > 0 && (
         <div className="tagihan-card">
-          <h3>⚠️ Total Tagihan Belum Dibayar</h3>
+          <h3> Total Tagihan Belum Dibayar</h3>
           <div className="tagihan-amount">
             Rp {totalTagihan.toLocaleString('id-ID')}
           </div>
@@ -110,7 +110,7 @@ const StatusPembayaranMurid = ({ muridId }) => {
 
       {/* Riwayat Pembayaran */}
       <div className="section-card">
-        <h3>📋 Riwayat Pembayaran {tahunFilter}</h3>
+        <h3> Riwayat Pembayaran {tahunFilter}</h3>
         {pembayaranFiltered.length > 0 ? (
           <div className="table-responsive">
             <table className="data-table">
@@ -154,7 +154,7 @@ const StatusPembayaranMurid = ({ muridId }) => {
 
       {/* Informasi Pembayaran */}
       <div className="info-box">
-        <h4>ℹ️ Informasi Pembayaran</h4>
+        <h4>ℹ Informasi Pembayaran</h4>
         <ul>
           <li>Pembayaran SPP dilakukan setiap tanggal 1-10 bulan berjalan</li>
           <li>Dapat melakukan pembayaran melalui Transfer Bank atau Cash</li>

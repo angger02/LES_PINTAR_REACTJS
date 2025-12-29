@@ -8,7 +8,7 @@ import KelolaDataTambahan from '../../components/admin/KelolaDataTambahan';
 import KelolaPengumuman from '../../components/admin/KelolaPengumuman';
 import RekapKeuangan from '../../components/admin/RekapKeuangan';
 import StatusPembayaran from '../../components/admin/StatusPembayaran';
-import '../../styles/AdminDashboard.css';
+import '../../styles/Dashboard.css';
 
 const AdminDashboard = () => {
   const [currentUser, setCurrentUser] = useState(null);
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
       {/* Sidebar */}
       <aside className="sidebar">
         <div className="sidebar-header">
-          <h2>🎓 Les Pintar</h2>
+          <h2> Les Pintar</h2>
           <p className="user-role">Dashboard Admin</p>
         </div>
 
@@ -53,48 +53,48 @@ const AdminDashboard = () => {
             className={activeMenu === 'jadwal' ? 'active' : ''}
             onClick={() => setActiveMenu('jadwal')}
           >
-            📅 Kelola Jadwal
+             Kelola Jadwal
           </button>
           <button 
             className={activeMenu === 'validasi' ? 'active' : ''}
             onClick={() => setActiveMenu('validasi')}
           >
-            ✅ Validasi Laporan
+             Validasi Laporan
           </button>
           <button 
             className={activeMenu === 'performa' ? 'active' : ''}
             onClick={() => setActiveMenu('performa')}
           >
-            📊 Analisis Performa
+             Analisis Performa
           </button>
           <button 
             className={activeMenu === 'data' ? 'active' : ''}
             onClick={() => setActiveMenu('data')}
           >
-            📁 Data Tambahan
+             Data Tambahan
           </button>
           <button 
             className={activeMenu === 'pengumuman' ? 'active' : ''}
             onClick={() => setActiveMenu('pengumuman')}
           >
-            📢 Pengumuman
+             Pengumuman
           </button>
           <button 
             className={activeMenu === 'rekap' ? 'active' : ''}
             onClick={() => setActiveMenu('rekap')}
           >
-            💰 Rekap Keuangan
+             Rekap Keuangan
           </button>
           <button 
             className={activeMenu === 'pembayaran' ? 'active' : ''}
             onClick={() => setActiveMenu('pembayaran')}
           >
-            💳 Status Pembayaran
+             Status Pembayaran
           </button>
         </nav>
 
         <button className="logout-btn" onClick={handleLogout}>
-          🚪 Logout
+           Logout
         </button>
       </aside>
 
@@ -102,13 +102,13 @@ const AdminDashboard = () => {
       <main className="main-content">
         <div className="content-header">
           <h1>
-            {activeMenu === 'jadwal' && '📅 Kelola Jadwal Murid'}
-            {activeMenu === 'validasi' && '✅ Validasi Laporan KBM'}
-            {activeMenu === 'performa' && '📊 Analisis Performa Murid'}
-            {activeMenu === 'data' && '📁 Kelola Data Tambahan'}
-            {activeMenu === 'pengumuman' && '📢 Kelola Pengumuman'}
-            {activeMenu === 'rekap' && '💰 Rekap Keuangan'}
-            {activeMenu === 'pembayaran' && '💳 Status Pembayaran Murid'}
+            {activeMenu === 'jadwal' && ' Kelola Jadwal Murid'}
+            {activeMenu === 'validasi' && ' Validasi Laporan KBM'}
+            {activeMenu === 'performa' && ' Analisis Performa Murid'}
+            {activeMenu === 'data' && ' Kelola Data Tambahan'}
+            {activeMenu === 'pengumuman' && ' Kelola Pengumuman'}
+            {activeMenu === 'rekap' && ' Rekap Keuangan'}
+            {activeMenu === 'pembayaran' && ' Status Pembayaran Murid'}
           </h1>
         </div>
 

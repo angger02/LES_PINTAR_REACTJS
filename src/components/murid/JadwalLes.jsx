@@ -21,7 +21,7 @@ const JadwalLes = ({ muridId }) => {
   return (
     <div className="jadwal-les">
       <div className="info-card">
-        <h3>📚 Jadwal Les Anda</h3>
+        <h3> Jadwal Les Anda</h3>
         <p><strong>Nama:</strong> {murid.nama}</p>
         <p><strong>Kelas:</strong> {murid.kelas}</p>
         <p><strong>NIS:</strong> {murid.nis}</p>
@@ -31,11 +31,11 @@ const JadwalLes = ({ muridId }) => {
         {jadwalSorted.map(jadwal => (
           <div key={jadwal.id} className="jadwal-card">
             <div className="jadwal-hari">{jadwal.hari}</div>
-            <div className="jadwal-waktu">⏰ {jadwal.waktu}</div>
+            <div className="jadwal-waktu"> {jadwal.waktu}</div>
             <div className="jadwal-info">
-              <p><strong>📖 Mata Pelajaran:</strong></p>
+              <p><strong> Mata Pelajaran:</strong></p>
               <p className="mata-pelajaran">{jadwal.mataPelajaran}</p>
-              <p><strong>🏫 Ruangan:</strong> {jadwal.ruangan}</p>
+              <p><strong> Ruangan:</strong> {jadwal.ruangan}</p>
             </div>
           </div>
         ))}

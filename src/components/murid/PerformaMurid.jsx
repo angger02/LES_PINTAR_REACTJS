@@ -74,7 +74,7 @@ ${i + 1}. Tanggal: ${new Date(lap.tanggal).toLocaleDateString('id-ID')}
     <div className="performa-murid">
       {/* Info Card */}
       <div className="info-card">
-        <h3>📊 Performa Belajar</h3>
+        <h3> Performa Belajar</h3>
         <p><strong>Nama:</strong> {murid.nama}</p>
         <p><strong>Kelas:</strong> {murid.kelas}</p>
         <p><strong>NIS:</strong> {murid.nis}</p>
@@ -83,22 +83,22 @@ ${i + 1}. Tanggal: ${new Date(lap.tanggal).toLocaleDateString('id-ID')}
       {/* Statistik Nilai */}
       <div className="summary-cards">
         <div className="summary-card primary">
-          <div className="summary-icon">📈</div>
+          <div className="summary-icon"></div>
           <h3>{rataRata}</h3>
           <p>Rata-rata Nilai</p>
         </div>
         <div className="summary-card success">
-          <div className="summary-icon">📚</div>
+          <div className="summary-icon"></div>
           <h3>{nilaiMurid.length}</h3>
           <p>Total Penilaian</p>
         </div>
         <div className="summary-card info">
-          <div className="summary-icon">🎯</div>
+          <div className="summary-icon"></div>
           <h3>{nilaiMurid.filter(n => n.nilai >= 80).length}</h3>
           <p>Nilai ≥ 80</p>
         </div>
         <div className="summary-card warning">
-          <div className="summary-icon">⚠️</div>
+          <div className="summary-icon"></div>
           <h3>{nilaiMurid.filter(n => n.nilai < 70).length}</h3>
           <p>Perlu Bimbingan</p>
         </div>
@@ -106,7 +106,7 @@ ${i + 1}. Tanggal: ${new Date(lap.tanggal).toLocaleDateString('id-ID')}
 
       {/* Daftar Nilai */}
       <div className="section-card">
-        <h3>📝 Daftar Nilai</h3>
+        <h3> Daftar Nilai</h3>
         {nilaiMurid.length > 0 ? (
           <div className="table-responsive">
             <table className="data-table">
@@ -147,9 +147,9 @@ ${i + 1}. Tanggal: ${new Date(lap.tanggal).toLocaleDateString('id-ID')}
       {/* Laporan Bulanan */}
       <div className="section-card">
         <div className="section-header">
-          <h3>📅 Laporan Bulanan</h3>
+          <h3> Laporan Bulanan</h3>
           <button onClick={handleDownloadReport} className="download-btn">
-            📥 Download Laporan
+             Download Laporan
           </button>
         </div>
 
@@ -173,7 +173,7 @@ ${i + 1}. Tanggal: ${new Date(lap.tanggal).toLocaleDateString('id-ID')}
           </div>
         </div>
 
-        <h4>📚 Materi yang Dipelajari di {namaBulan[bulan]} {tahun}</h4>
+        <h4> Materi yang Dipelajari di {namaBulan[bulan]} {tahun}</h4>
         {laporanBulan.length > 0 ? (
           <div className="laporan-list">
             {laporanBulan.map((lap, index) => (
@@ -181,7 +181,7 @@ ${i + 1}. Tanggal: ${new Date(lap.tanggal).toLocaleDateString('id-ID')}
                 <div className="laporan-number">{index + 1}</div>
                 <div className="laporan-content">
                   <p className="laporan-date">
-                    📅 {new Date(lap.tanggal).toLocaleDateString('id-ID', {
+                     {new Date(lap.tanggal).toLocaleDateString('id-ID', {
                       weekday: 'long',
                       year: 'numeric',
                       month: 'long',
