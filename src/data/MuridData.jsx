@@ -54,5 +54,17 @@ export const muridData = [
     email: "eka@gmail.com",
     alamat: "Jl. Kuningan No. 50, Jakarta",
     tanggalMasuk: "2023-07-15"
+  },
+  {
+    id: 6,
+    nis: "123456",
+    nama: "angger hidayat",
+    kelas: "12 ipa 3",
+    orangTua: "sodikin",
+    telepon: "0981233123",
+    email: "angger@gmail.com",
+    alamat: "depok",
+    tanggalMasuk: "2025-07-15"
+
   }
 ];

@@ -102,29 +102,10 @@ const Login = () => {
           </button>
         </form>
 
-        <div className="login-info">
-          <h3>Akun Demo:</h3>
-          <div className="demo-accounts">
-            <div className="demo-card">
-              <strong>👨‍💼 Admin</strong>
-              <p>Username: admin</p>
-              <p>Password: admin123</p>
-            </div>
-            <div className="demo-card">
-              <strong>👨‍🏫 Guru</strong>
-              <p>Username: guru1</p>
-              <p>Password: guru123</p>
-            </div>
-            <div className="demo-card">
-              <strong>👨‍🎓 Murid</strong>
-              <p>Username: murid1</p>
-              <p>Password: murid123</p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Login;   
